@@ -32,9 +32,15 @@
     color: var(--color-gray);
 }
 
-.navbar__ul-li.active {
-    color: var(--color-active); /* Color rosa para el enlace activo */
+.navbar__ul-li:hover {
+    color: var(--color-active)
 }
+
+.navbar__ul-li:active {
+    color: var(--color-active)
+}
+
+
 
 @media screen and (max-width: 1024px){
     .navbar-container {
