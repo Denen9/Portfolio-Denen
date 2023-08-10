@@ -1,0 +1,81 @@
+
+.hero__box {
+    width: 500px;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hero__box-presentation {
+    font-size: 2rem;
+    color: var(--color-active);
+    font-weight: 200;
+    text-shadow: 0px 0px 7px rgba(173,26,228,0.4);
+}
+.hero__box-presentation b {
+    font-weight: 600;
+    font-family: Zelda;
+}
+
+.hero__box-frontend{
+    font-size: 2rem;
+    color: var(--color-active);
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+
+@media screen and (max-width: 1024px){
+
+    .hero__box {
+        width: 500px;
+        padding: 2rem;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .hero__box {
+        width: 50%;
+        display: flex;
+        padding: 2rem;
+        justify-content: flex-end;
+        
+    
+    }
+
+    .hero__box-presentation{
+        font-size: 1.5rem;
+        font-weight: 100;
+    }
+
+    .hero__box-frontend{
+        font-size: 1.5rem;
+    }
+        
+}
+
+@media screen and (max-width: 576px){
+    .hero__box {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 6rem;
+        
+    }
+
+    .hero__box-presentation{
+        font-size: 1.15rem;
+        font-weight: 100;
+    }
+
+    .hero__box-frontend{
+        font-size: 1.15rem;
+        margin-bottom: 1rem;
+    }
+    
+}
+

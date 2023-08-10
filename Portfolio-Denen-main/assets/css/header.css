@@ -1,0 +1,17 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999; /* Aseguramos que el navbar esté por encima del contenido */
+    background-color: transparent; /* Establecemos el fondo transparente inicial */
+    transition: background-color 0.3s ease; /* Añadimos una transición para el cambio de fondo */
+}
+
+.header.solid-background {
+    background-color: var(--color-primary); /* Cambiar el valor a tu color sólido deseado */
+}
+
+
+@media screen and (max-width: 1024px){
+}

@@ -1,0 +1,281 @@
+
+.projects-container {
+    background-color: var(--color-primary);
+}
+
+.projects {
+    margin: 0 8rem;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+}
+
+.projects__title {
+    font-size: 1.35rem;
+    font-weight: 100;
+    color: var(--color-gray);
+}
+
+
+.projects__title b {
+    font-weight: 500;
+    padding-left: 0.5rem;
+}
+
+.projects__card-one, .projects__card-two, .projects__card-three, .projects__card-four{
+    display: flex;
+    margin-top: 6rem;
+}
+
+.projects__card-image {
+    width: 45%;
+    height: 350px;
+    background: url(/assets/images/encriptador-de-texto.webp);
+    background-size: cover;
+    cursor: pointer;
+    border: 2px solid var(--color-active);
+}
+
+.one{
+    background: url(/assets/images/Sin\ título.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.projects__card-information {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.projects__card-title{
+    font-size: 1rem;
+    color: var(--color-gray);
+    margin: 0 0 1.5rem 1.5rem;
+
+}
+
+.projects__card-text{
+    font-size: 1.25rem;
+    color: var(--color-gray);
+    line-height: 150%;
+    font-weight: 100;
+    margin: 0 3rem 1.5rem 1.5rem;
+
+}
+
+.projects__card-text b{
+    font-weight: 500;
+
+}
+
+.projects__card-type {
+    font-size: .95rem;
+    font-weight: 200;
+    color: var(--color-gray);
+    margin: 0 1.5rem 1.5rem 1.5rem;
+
+}
+
+.projects__card-button {
+    margin-left: 1.5rem;
+}
+
+.projects__card-button i {
+    margin-left: .5rem;
+    font-size: 10px;
+}
+
+.projects__card-information > a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 1024px){
+    
+    .projects-container {
+        background-color: var(--color-terciary);
+    }
+    
+    .projects {
+        margin: 0 6rem;
+        padding: 4rem 0;
+    }
+    
+    .projects__title {
+        font-size: 1.25rem;
+        font-weight: 100;
+        color: var(--color-gray);
+    }
+    
+    
+    .projects__title b {
+        font-weight: 500;
+        padding-left: 0.5rem;
+    }
+    
+    .projects__card-one, .projects__card-two, .projects__card-three, .projects__card-four{
+        margin-top: 4rem;
+    }
+
+    .projects__card-image {
+        height: 250px;
+        width: 100%;
+        background-color: var(--color-gray);
+    }
+
+    .projects__card-information {
+        width: 100%;
+    }
+    
+    .projects__card-title{
+        margin: 0 0 1rem 1rem
+    }
+    
+    .projects__card-text{
+        font-size: 1.25rem;
+        line-height: 125%;
+        margin: 0 1rem 1rem 1rem;
+    
+    }
+    
+    .projects__card-type {
+        font-size: .95rem;
+        margin: 0 1rem 1rem 1rem;
+
+    
+    }
+    
+    .projects__card-button {
+        margin-left: 1rem;
+    }
+    
+    
+}
+
+@media screen and (max-width: 768px){
+    
+    .projects {
+        margin: 0 4rem;
+        padding: 4rem 0;
+    }
+    
+    .projects__title {
+        font-size: 1.25rem;
+        padding: 0;
+    }
+    
+    
+    .projects__title b {
+        font-weight: 500;
+        padding-left: 0.5rem;
+    }
+    
+    .projects__card-two, .projects__card-four{
+        margin-top: 4rem;
+        flex-direction: column-reverse;
+    }
+
+    .projects__card-one, .projects__card-three{
+        margin-top: 4rem;
+        flex-direction: column;
+    }
+
+    .projects__card-image {
+        height: 220px;
+        width:  100%;
+        background-size: cover;
+    }
+    .projects__card-information{
+        margin-top: 2rem;
+    }
+    
+    .projects__card-title{
+        margin: 1rem 0 0 0;
+        align-self: center;
+
+    }
+    
+    .projects__card-text{
+        font-size: 1.25rem;
+        line-height: 125%;
+        margin: 1rem 0 0 0;
+        align-self: center;
+    
+    }
+    
+    .projects__card-type {
+        font-size: .95rem;
+        margin: 1rem 0 0 0;
+        align-self: center;
+    
+    }
+    
+    .projects__card-button {
+        margin: 1rem 0 0 0;
+        align-self: center;
+    }
+    
+    
+}
+
+@media screen and (max-width: 576px){
+    
+    .projects {
+        margin: 0 2rem;
+        padding: 4rem 0;
+    }
+    
+    .projects__title {
+        font-size: 1.20rem;
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .projects__card-two, .projects__card-four{
+        margin-top: 6rem;
+        flex-direction: column-reverse;
+        
+    }
+
+    .projects__card-one, .projects__card-three{
+        margin-top: 6rem;
+        flex-direction: column;
+        
+    }
+
+    .projects__card-image {
+        height: 200px;
+        background-size: cover;
+
+    }
+    .projects__card-information{
+        margin-top: 1rem;
+    }
+    
+    .projects__card-title{
+        margin: .75rem 0 0 0;
+        padding: 0;
+    }
+    
+    .projects__card-text{
+        font-size: 1.15rem;
+        margin: .75rem 0 0 0;
+    
+    }
+    
+    .projects__card-type {
+        font-size: .95rem;
+        margin: .75rem 0 0 0;
+    
+    }
+    
+    .projects__card-button {
+        margin: .75rem 0 0 0;
+
+    }
+    
+    
+}

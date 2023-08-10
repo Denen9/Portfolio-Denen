@@ -1,0 +1,25 @@
+.skills{
+    background-color: var(--color-black);
+}
+.skills__box {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-gray);
+    margin: 0 8rem;
+    padding: 4rem 0;
+}
+
+
+@media screen and (max-width: 1024px){
+
+    .skills__box {
+        margin: 0 4rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    .skills__box {
+        margin: 0 2rem;
+    }
+}
