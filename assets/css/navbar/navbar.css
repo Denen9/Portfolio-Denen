@@ -39,6 +39,10 @@
     color: var(--color-active)
 }
 
+.abrir, .cerrar-menu{
+    color: transparent;
+}
+
 
 @media screen and (max-width: 1024px){
 
