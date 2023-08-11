@@ -39,14 +39,6 @@
     color: var(--color-active)
 }
 
-.abrir-menu{
-    display: none;
-}
-.cerrar-menu {
-    display: none;
-}
-
-
 
 @media screen and (max-width: 1024px){
 
@@ -59,22 +51,22 @@
         display: none;
     }
     
-    .abrir-menu, .cerrar-menu{
+    .abrir-menu, .cerrar-menu {
         height: 20px;
         border: none;
+        margin: 2rem 4rem 0 0;
         color: var(--color-active);
         font-size: 2.5rem;
     }
         
-   .navbar-container {
-    display: flex;
-    height: 100vh;
-    width: 300px;
-    z-index: 1;
-    display: none;
-    background-color: var(--color-primary);
-    filter: opacity(0.9);
-}
+    .navbar-container {
+        display: flex;
+        height: 100vh;
+        width: 300px;
+        z-index: 1;
+        display: none;
+        background-color: var(--color-primary);
+    }
 
 .navbar {
     display: flex;
@@ -135,7 +127,6 @@
         
    .navbar-container {
     display: flex;
-    height: 100%;
     width: 100%;
     display: none;
     background-color: var(--color-primary);

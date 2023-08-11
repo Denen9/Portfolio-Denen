@@ -7,10 +7,6 @@
     transition: background-color 0.3s ease; /* Añadimos una transición para el cambio de fondo */
 }
 
-.header i {
-    display: none;
-}
-
 .header.solid-background {
     background-color: var(--color-primary); /* Cambiar el valor a tu color sólido deseado */
 }
@@ -24,12 +20,4 @@
         align-items: flex-end;
         justify-content: flex-start;
     }
-}
-
-@media screen and (max-width: 768px){
-
-    .header{
-        height: 100%;
-    }
-
 }
