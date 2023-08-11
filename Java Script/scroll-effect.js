@@ -40,8 +40,8 @@
   
 sr.reveal('.scroll-img', {
     duration: 3000,
-    origin: 'right',
-    distance: '200px'
+    origin: 'bottom',
+    distance: '100px'
 });
 
 sr.reveal('.hero__box-presentation', {
@@ -78,7 +78,7 @@ sr.reveal('.projects__title', {
 });
 
 sr.reveal('.text-right', {
-  duration: 3500,
+  duration: 3000,
   origin: 'right',
   distance: '100px'
 });
@@ -90,7 +90,7 @@ sr.reveal('.image-right', {
 });
 
 sr.reveal('.text-left', {
-  duration: 3500,
+  duration: 3000,
   origin: 'left',
   distance: '100px'
 });

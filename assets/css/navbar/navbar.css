@@ -17,7 +17,6 @@
 
 .navbar__ul {
     display: flex;
-    height: 2rem;
     width: 100%;
     align-items: center;
 }
@@ -40,16 +39,141 @@
     color: var(--color-active)
 }
 
+.abrir-menu{
+    display: none;
+}
+.cerrar-menu {
+    display: none;
+}
+
 
 
 @media screen and (max-width: 1024px){
-    .navbar-container {
-        height: 4rem;
-    }
-    
-    .navbar {
-        display: none;
 
+    .abrir-menu {
+        position: absolute;
+        z-index: 1;
+    }
+    .cerrar-menu {
+        align-self: flex-end;
+        display: none;
     }
     
+    .abrir-menu, .cerrar-menu{
+        height: 20px;
+        border: none;
+        color: var(--color-active);
+        font-size: 2.5rem;
+    }
+        
+   .navbar-container {
+    display: flex;
+    height: 100vh;
+    width: 300px;
+    z-index: 1;
+    display: none;
+    background-color: var(--color-primary);
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 300px;
+    
+}
+
+.navbar__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navbar__ul a {
+    text-decoration: none;
+}
+
+.navbar__ul-li {
+    margin: 0 1rem;
+    font-size: 1rem;
+    color: var(--color-gray);
+    margin: 1rem 0;
+}
+
+.display-none{
+    display: none;
+}   
+
+.display-flex{
+    display: flex;
+}
+}
+@media screen and (max-width: 768px){
+
+    .abrir-menu {
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        align-self: center;
+    }
+    .cerrar-menu {
+        align-self: center;
+        display: none;
+    }
+    .abrir-menu, .cerrar-menu{
+        height: 20px;
+        border: none;
+        margin: 2rem 4rem;
+        color: var(--color-active);
+        font-size: 2.5rem;
+    }
+
+        
+   .navbar-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    display: none;
+    background-color: var(--color-primary);
+
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    
+}
+
+.navbar__ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navbar__ul a {
+    text-decoration: none;
+}
+
+.navbar__ul-li {
+    margin: 1rem 1rem;
+    font-size: 1.5rem;
+    color: var(--color-gray);
+    margin: 1rem 0;
+}
+
+.display-none{
+    display: none;
+}   
+
+.display-flex{
+    display: flex;
+}
 }

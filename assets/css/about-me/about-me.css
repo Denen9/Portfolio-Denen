@@ -33,31 +33,50 @@
     line-height: 150%;
 }
 
-.about-me__buttons{
-    margin: 2rem 0;
-    padding: 0 2rem;
+.about-me__buttons {
     display: flex;
+    justify-content: flex-start;
+    padding: 1rem;
+    width: 100%;
 }
 
 .about-me__btn {
     all: unset;
-    font-size: 1.15rem;
+    position: relative; /* Establecer posición relativa para el botón */
+    font-size: 1rem;
+    margin-right: 1rem;
+    padding: 0 1rem 0 0;
+    padding-left: 0.4rem;
     color: var(--color-active);
-    margin: 0 1rem;
     font-weight: 400;
     cursor: pointer;
-    padding-bottom: 0.2rem;
 }
 
-.about-me__btn:focus {
-    border-bottom: 2px solid var(--color-active);
+.activeButton::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 3px;
+    background-color: var(--color-active);
+    animation: slideIn 0.s ease forwards; /* Agrega una animación al pseudo-elemento */
+}
 
+@keyframes slideIn {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .about-me__list {
     padding-top: 1rem;
     margin-bottom: 2rem;
-    margin-right: 6rem;
+    padding-right: 1.15rem;
     border-top: 1px solid var(--color-active);
 }
 
@@ -120,9 +139,49 @@
         line-height: 150%;
     }
     
-    .about-me__buttons{
-        margin: 2rem 0;
+    .about-me__buttons {
+        display: flex;
+        justify-content: flex-start;
+        padding: 1rem;
+        width: 100%;
     }
+    
+    .about-me__btn {
+        all: unset;
+        position: relative; /* Establecer posición relativa para el botón */
+        font-size: 1rem;
+        margin-right: 1.15rem;
+        padding-left: 0.4rem;
+        color: var(--color-active);
+        font-weight: 400;
+        cursor: pointer;
+    }
+    
+    .activeButton {
+        transition: all 0.5s ease;
+    }
+
+    .activeButton::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 3px;
+        background-color: var(--color-active);
+        animation: slideIn 0.3s ease forwards; /* Agrega una animación al pseudo-elemento */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+    
     
     .about-me__list {
         margin-bottom: 2rem;
@@ -190,6 +249,10 @@
     
     .about-me__buttons{
         margin: 2rem 0;
+    }
+
+    .about-me__btn{
+        font-size: 1rem;
     }
     
     .about-me__list {
@@ -269,10 +332,11 @@
         padding-left: 0.5rem;
     }
 
-    .about-me__btn:focus {
+    .about-me__btn {
         border-bottom: none;
-        border-left: 2px solid var(--color-active);
     }
+
+
     
     .about-me__list {
         margin-bottom: 2rem;

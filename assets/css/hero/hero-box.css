@@ -43,8 +43,9 @@
         width: 50%;
         display: flex;
         padding: 2rem;
-        justify-content: flex-end;
-        
+        align-self: center;
+        justify-content: center;
+        height: 400px;
     
     }
 
@@ -63,8 +64,9 @@
     .hero__box {
         width: 100%;
         padding: 1rem;
-        margin-top: 6rem;
-        
+        height: 350px;
+        align-self: flex-start;
+        justify-content: center;        
     }
 
     .hero__box-presentation{

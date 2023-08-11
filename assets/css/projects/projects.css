@@ -99,7 +99,7 @@
     }
     
     .projects {
-        margin: 0 6rem;
+        margin: 0 4rem;
         padding: 4rem 0;
     }
     
@@ -230,7 +230,7 @@
     .projects__title {
         font-size: 1.20rem;
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
     }
     
     
@@ -258,22 +258,26 @@
     .projects__card-title{
         margin: .75rem 0 0 0;
         padding: 0;
+        align-self: flex-start;
     }
     
     .projects__card-text{
         font-size: 1.15rem;
         margin: .75rem 0 0 0;
+        align-self: flex-start;
     
     }
     
     .projects__card-type {
         font-size: .95rem;
         margin: .75rem 0 0 0;
+        align-self: flex-start;
     
     }
     
     .projects__card-button {
         margin: .75rem 0 0 0;
+        align-self: flex-start;
 
     }
     

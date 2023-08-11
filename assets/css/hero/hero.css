@@ -8,18 +8,23 @@
     background-size: contain;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: bottom left;
 }
 
 @media screen and (max-width: 1024px){
     .hero {
         justify-content: flex-end;
+        background-attachment: scroll;
+        height: 768px;
     }
 }
 
 @media screen and (max-width: 768px){
     .hero {
         align-items: flex-end;
-        background-position: bottom left;
+        background-attachment: scroll;
+        background-size: 400px 500px;
+
     }
 
 }
@@ -29,7 +34,6 @@
         align-items: flex-start;
         background-attachment: scroll;
         background-size: 350px 438px;
-        background-position: bottom left;
         height: 600px;
     }
 }
