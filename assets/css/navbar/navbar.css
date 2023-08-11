@@ -73,6 +73,7 @@
     z-index: 1;
     display: none;
     background-color: var(--color-primary);
+    filter: opacity(0.9);
 }
 
 .navbar {

@@ -73,30 +73,30 @@ sr.reveal('.about-me__text', {
 
 sr.reveal('.projects__title', {
   duration: 3000,
-  origin: 'right',
-  distance: '100px'
+  origin: 'left',
+  distance: '-200px'
 });
 
 sr.reveal('.text-right', {
   duration: 3000,
   origin: 'right',
-  distance: '100px'
+  distance: '-200px'
 });
 
 sr.reveal('.image-right', {
   duration: 2000,
   origin: 'right',
-  distance: '100px'
+  distance: '-200px'
 });
 
 sr.reveal('.text-left', {
   duration: 3000,
-  origin: 'left',
-  distance: '100px'
+  origin: 'right',
+  distance: '-200px'
 });
 
 sr.reveal('.image-left', {
   duration: 2000,
-  origin: 'left',
-  distance: '100px'
+  origin: 'right',
+  distance: '-200px'
 });
