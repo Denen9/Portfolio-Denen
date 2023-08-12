@@ -79,24 +79,24 @@ sr.reveal('.projects__title', {
 
 sr.reveal('.text-right', {
   duration: 3000,
-  origin: 'right',
-  distance: '-200px'
+  origin: 'bottom',
+  distance: '200px'
 });
 
 sr.reveal('.image-right', {
   duration: 2000,
-  origin: 'right',
-  distance: '-200px'
+  origin: 'bottom',
+  distance: '200px'
 });
 
 sr.reveal('.text-left', {
   duration: 3000,
-  origin: 'right',
-  distance: '-200px'
+  origin: 'bottom',
+  distance: '200px'
 });
 
 sr.reveal('.image-left', {
   duration: 2000,
-  origin: 'right',
-  distance: '-200px'
+  origin: 'bottom',
+  distance: '200px'
 });
