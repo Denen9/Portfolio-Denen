@@ -29,16 +29,10 @@
 .projects__card-image {
     width: 45%;
     height: 350px;
-    background: url(/assets/images/encriptador-de-texto.webp);
+    background: url(/assets/images/Encriptador-de-texto.webp);
     background-size: cover;
     cursor: pointer;
     border: 2px solid var(--color-active);
-}
-
-.one{
-    background: url(/assets/images/Sin\ título.png);
-    background-size: cover;
-    background-position: center;
 }
 
 .projects__card-information {
