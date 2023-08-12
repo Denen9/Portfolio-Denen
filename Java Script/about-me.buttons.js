@@ -3,7 +3,7 @@ const btnSoftSkills = document.getElementById("button-soft-skills");
 const btnEducation = document.getElementById("button-education");
 const btnExperience = document.getElementById("button-experience");
 
-
+const navbarLi = document.querySelector(".navbar__ul-li")
 
 const toggleActiveClass = (clickedButton)=>{
 
@@ -15,6 +15,7 @@ const toggleActiveClass = (clickedButton)=>{
         }
     });
 }
+
 
 
  btnSkills.addEventListener('click', ()=>{  

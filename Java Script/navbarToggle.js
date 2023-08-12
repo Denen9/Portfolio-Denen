@@ -3,6 +3,16 @@ const openMenuBtn = document.querySelector(".abrir-menu");
 const navbarContainer = document.querySelector(".navbar-container")
 const closeMenuBtn = document.querySelector(".cerrar-menu");
 const header = document.querySelector(".header")
+const navbarLi = document.querySelectorAll(".navbar__ul-li");
+
+navbarLi.forEach(item => {
+  item.addEventListener("click", ()=>{
+
+    navbarContainer.classList.add("display-none")
+    navbarContainer.classList.remove("display-flex")
+  })
+});
+
 
 openMenuBtn.addEventListener("click", ()=>{
 
@@ -19,3 +29,5 @@ closeMenuBtn.addEventListener("click", ()=>{
   navbarContainer.classList.add("display-none")
 
 })
+
+
