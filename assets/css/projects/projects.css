@@ -116,7 +116,7 @@
     .projects__card-image {
         height: 250px;
         width: 100%;
-        background-color: var(--color-gray);
+        background: url(/assets/images/Encriptador-de-texto.webp);
     }
 
     .projects__card-information {
